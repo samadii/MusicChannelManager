@@ -3,6 +3,10 @@
 A Telegram bot that add a dynamic caption to musics 
 
 
+## Deploy to Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/samadii/MusicChannelManager)
+
 
 
 ## What is it ? 
