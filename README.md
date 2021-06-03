@@ -14,4 +14,4 @@ It's a simple bot to manage your music channel. With just adding this bot to you
 🎼 Genre: <genre>
 ```
 
-<img src="https://github.com/samadii/MusicChannelManager/blob/master/demo.png" width="450" />
+<img src="https://github.com/samadii/MusicChannelManager/blob/main/demo.png" width="450" />
