@@ -2,6 +2,7 @@ from telegram.ext import Updater, MessageHandler, Filters
 import json
 import logging
 import mutagen
+import os
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                      level=logging.INFO)
@@ -9,8 +10,8 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 with open("config.json", "r") as read_file:
     config = json.load(read_file)
 
-
-updater = Updater(config["TOKEN"])
+token = os.environ.get('BOT_TOKEN')
+updater = Updater(token)
 dispatcher = updater.dispatcher
 
 class Audio:
