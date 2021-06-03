@@ -7,8 +7,6 @@ import os
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                      level=logging.INFO)
 
-with open("config.json", "r") as read_file:
-    config = json.load(read_file)
 
 token = os.environ.get('BOT_TOKEN')
 updater = Updater(token)
