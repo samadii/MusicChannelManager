@@ -1,0 +1,11 @@
+---
+application:
+  name: "musicchannelmanager"
+  project: "Musicchannel"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-musicchannelmanager"
+  routes:
+  - application_name: "musicchannelmanager"
+    paths:
+    - "/*"
