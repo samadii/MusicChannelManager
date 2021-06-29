@@ -76,7 +76,7 @@ def change_caption(bot, update):
 def start(bot, update):
     name  = update.message.from_user.first_name  #first name of the user messaging
     reply = "Hi!! {}".format(name)
-    self.bot.send_message(chat_id = update.message.chat_id, text = reply)
+    bot.send_message(chat_id = update.message.chat_id, text = reply)
 
 
 handler = MessageHandler(Filters.audio, change_caption, channel_post_updates=True, message_updates=False)
