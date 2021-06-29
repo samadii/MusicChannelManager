@@ -1,4 +1,4 @@
-from telegram.ext import Updater, MessageHandler, Filters
+from telegram.ext import Updater, Filters, CommandHandler, MessageHandler
 import json
 import logging
 import mutagen
@@ -73,9 +73,14 @@ def change_caption(bot, update):
     audio.set_new_caption()
 
 
+def start(bot, update):
+    name  = update.message.from_user.first_name  #first name of the user messaging
+    reply = "Hi!! {}".format(name)
+    self.bot.send_message(chat_id = update.message.chat_id, text = reply)
+
 
 handler = MessageHandler(Filters.audio, change_caption, channel_post_updates=True, message_updates=False)
-# handler = CommandHandler("ok", echo)
+handler = CommandHandler("start", start)
 dispatcher.add_handler(handler=handler)
 
 
