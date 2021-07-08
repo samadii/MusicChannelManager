@@ -74,7 +74,7 @@ def change_caption(bot, update):
 
 
 def start(bot, update):
-    reply = "Hi ! I am Music Channel Manager Bot! I can add a dynamic caption to the musics, just add me to a channel as admin and give me the permissions."
+    reply = "Hi !  I am Music Channel Manager Bot!  I can add a dynamic caption to the musics, just add me to a channel as admin and give me the permissions."
     bot.send_message(chat_id = update.message.chat_id, text = reply)
 
 
